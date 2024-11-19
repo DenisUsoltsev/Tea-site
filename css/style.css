@@ -75,6 +75,11 @@ footer[id] {
     color: white;
 }
 
+@media (max-width: 1000px) {
+    .banner-image { margin-top: 0; }
+    .text-container { padding-left: 20px; }
+}
+
 @media (max-width: 620px) {
     .text-overlay { top: 276px; }
     .text-block.moment {
@@ -125,6 +130,7 @@ footer[id] {
 }
 
 @media (max-width: 1000px) {
+    .text-quote { padding-left: 0; }
     .sometext { padding-top: 120px; }
 }
 
