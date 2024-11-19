@@ -1,0 +1,115 @@
+.clients-say {
+    width: 100%;
+    background: #F7F2EA;
+    margin-top: 150px;
+    padding: 0;
+    padding-top: 60px;
+    height: 397px;
+}
+
+.client-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.client-card {
+    width: 290px;
+    margin-left: 7px;
+}
+
+.text-comment {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.36;
+}
+
+.autor {
+    padding-top: 10px;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.36;
+}
+
+@media (max-width: 1150px) {
+    .clients-say {
+        margin-top: 120px;
+        padding-top: 60px;
+        padding-left: 54px;
+        padding-right: 54px;
+    }
+    .client-card:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 970px) {
+    .clients-say { 
+        height: 596px; 
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .client-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .client-card {
+        margin-bottom: 30px;
+    }
+
+    .client-card:last-child { display: block; }
+
+    /* Устанавливаем порядок, чтобы 3 и 4 карточки были на следующей строке */
+    .client-card:nth-child(1) { order: 1; }
+    .client-card:nth-child(2) { order: 2; }
+    .client-card:nth-child(3) { order: 3; }
+    .client-card:nth-child(4) { order: 4; }
+
+    /* Отступ между первой и второй карточками */
+    .client-card:nth-child(1) {
+        margin-right: 76px;
+    }
+
+    /* Отступ между третьей и четвертой карточками */
+    .client-card:nth-child(3) {
+        margin-right: 76px;
+    }
+}
+
+@media (max-width: 700px) {
+    .clients-say {
+        margin-top: 60px;
+        padding-top: 50px;
+        height: 588px;
+    }
+    .client-cards {
+        display: flex;
+        gap: 20px;
+    }
+    .client-card {
+        margin: 0;
+        width: 220px;
+    }
+    .client-card:nth-child(1) { margin-right: 0; }
+    .client-card:nth-child(3) { margin-right: 0; }
+}
+
+@media (max-width: 480px) {
+    .clients-say {
+        margin-top: 80px;
+        height: 440px;
+    }
+    .client-card {
+        padding: auto 10px;
+        width: 430px;
+    }
+    .client-card:nth-child(3) { display: none; }
+    .client-card:nth-child(4) { display: none; }
+}

@@ -1,0 +1,77 @@
+.prioritise {
+    margin: 150px auto;
+    padding: 0;
+    max-width: 1200px;
+    height: inherit;
+}
+
+.prioritise-cards {
+    margin-left: 9px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.prioritise-card {
+    max-width: 295px;
+    height: 178px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prioritise-title {
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.36;
+}
+
+.prioritise-description {
+    margin-top: 7px;
+    padding-bottom: 40px;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.36;
+}
+
+@media (max-width : 1100px) {
+    .prioritise { margin: 120px auto; }
+    .prioritise-cards {
+        flex-wrap: wrap;
+        row-gap: 30px;
+        column-gap: 210px;
+        justify-content: center;
+    }
+    .prioritise-card { width: 294px; }
+}
+
+@media (max-width : 880px) {
+    .prioritise-cards { column-gap: 133px; }
+}
+
+@media (max-width : 740px) {
+    .prioritise-cards { column-gap: 50px; }
+}
+
+@media (max-width : 650px) {
+    .prioritise { margin: 60px auto; }
+    .prioritise-cards { row-gap: 50px; }
+}
+
+@media (max-width : 420px) {
+    .prioritise { margin: 50px auto; }
+    .prioritise-cards { row-gap: 40px; }
+
+    .prioritise-title {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .prioritise-description {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.36;
+    }
+}
