@@ -8,8 +8,11 @@
 section[id] {
     scroll-margin-top: 165px;
 }
-footer[id] {
-    scroll-margin-top: 165px;
+
+@media (max-width: 480px) {
+    section[id] {
+        scroll-margin-top: 76px;
+    }
 }
 
 .title {
