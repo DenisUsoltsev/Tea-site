@@ -35,6 +35,28 @@ section[id] {
     margin-top: 35px;
     position: relative;
     display: flex;
+    justify-content: center;
+}
+
+.imag {
+    height: 500px;
+}
+
+.imag img {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width: 1599px) {
+    .imag {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100vw;
+        overflow: hidden;
+    }
 }
 
 .text-overlay {
