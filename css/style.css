@@ -33,31 +33,11 @@ section[id] {
 
 .banner-image {
     margin-top: 35px;
+    height: 500px;
     position: relative;
     display: flex;
     justify-content: center;
-}
-
-.imag {
-    height: 500px;
-}
-
-.imag img {
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    object-position: center;
-}
-
-@media (max-width: 1599px) {
-    .imag {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: 100vw;
-        height: inherit;
-        overflow: hidden;
-    }
+    background: url('../images/banner.jpg') left / cover no-repeat;
 }
 
 .text-overlay {
@@ -106,7 +86,7 @@ section[id] {
     .text-container { padding-left: 20px; }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 640px) {
     .text-overlay { top: 276px; }
     .text-block.moment {
         max-width: 450px;
@@ -117,7 +97,7 @@ section[id] {
 }
 
 @media (max-width: 450px) {
-    .banner-image img { height: 367px; }
+    .banner-image { height: 367px; }
     .text-overlay { top: 233px; }
     .text-block.moment {
         max-width: 340px;
@@ -176,11 +156,11 @@ section[id] {
 
 .know-more-block {
     width: 100%;
-    background: #F7F2EA;
     height: 418px;
     margin: 0 auto;
     padding: 0;
-    position: relative
+    position: relative;
+    background: #F7F2EA url('../images/tea_background.png') no-repeat right bottom;
 }
 
 .know-more-cards {
@@ -316,7 +296,10 @@ input::placeholder {
 }
 
 @media (max-width: 640px) {
-    .know-more-block { height: 415px; }
+    .know-more-block { 
+        height: 415px; 
+        background: #F7F2EA;
+    }
     .know-more { 
         padding-bottom: 30px; 
         max-width: 460px;
